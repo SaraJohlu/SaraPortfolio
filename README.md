@@ -1,8 +1,6 @@
-# React + Vite
+# Welcome to my portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mitt namn är Sara, denna portfolio skapades under min frontend utbildning för kursen Javascript2. Portfolion är gjord utifrån examinationsuppgift 
+för kursen. Planen är att använda denna i framtiden och bygga vidare på. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Portfolion är skapat med React + Redux, med Vite 
