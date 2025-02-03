@@ -1,4 +1,7 @@
 import { FiCheck } from "react-icons/fi";  // react-icons imported from react-icons
+
+import Footer from "./Components/Footer"
+
 import './App.css'
 
 function App() {
@@ -20,6 +23,8 @@ function App() {
         <button className="submit-button"><FiCheck /></button>
 
       </span>
+      <Footer />
+
     </>
   )
 }
