@@ -1,11 +1,28 @@
 import { FiCheck } from "react-icons/fi";  // react-icons imported from react-icons
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setName } from './slicers'
 
 import Footer from "./Components/Footer"
+import Home from './Components/Home/Home'
 
 import './App.css'
 
+
 function App() {
- 
+  const [inputValue, setInputValue] = useState('');
+  const dispatch = useDispatch();
+  const navigateHome = useNavigate();
+
+  const submitName = () => {
+    if(inputValue.trim() !== ''){
+      dispatch(setName(inputValue));
+      navigateHome('/home');
+    } else {
+      alert('No name submitted')
+    }
+  };
 
   return (
     <>
@@ -17,13 +34,20 @@ function App() {
         <input
         className='input-field' 
         type='text'
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
         placeholder='Enter name' 
-        value={''}/>
+        />
 
-        <button className="submit-button"><FiCheck /></button>
+        <button className="submit-button" onClick={submitName}><FiCheck /></button>
 
       </span>
       <Footer />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/home' element={<Home />} />
+      </Routes>
 
     </>
   )
