@@ -1,4 +1,4 @@
-
+import './style/NeonSign.css'
 
 const NeonSign = () => {
     const text = "Johlu";

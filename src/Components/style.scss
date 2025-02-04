@@ -1,0 +1,62 @@
+// Style for the componets
+
+// Mixins
+@mixin displayLayout1() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin displayLayout2() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+$mainFontColor: rgba(255, 255, 255, 0.87);
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  @include displayLayout1();
+  justify-content: space-between;
+  position: relative;
+
+  .johlu-side {
+    @include displayLayout2();
+
+    .profile-pic {
+      position: absolute;
+      top: 10rem;
+      left: 1rem;
+      width: 165px;
+      border-radius: 50%;
+      margin: 2rem;
+    }
+
+    .home-container {
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      top: 18rem;
+
+      text-align: center;
+
+      .welcome-message {
+        font-weight: 800;
+        font-size: xx-large;
+        margin-top: 5rem;
+      }
+
+      p {
+        font-size: large;
+        padding: 1rem 2rem 0rem 2rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

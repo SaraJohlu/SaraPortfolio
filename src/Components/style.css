@@ -1,0 +1,42 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#root .johlu-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#root .johlu-side .profile-pic {
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  width: 165px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+#root .johlu-side .home-container {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 18rem;
+  text-align: center;
+}
+#root .johlu-side .home-container .welcome-message {
+  font-weight: 800;
+  font-size: xx-large;
+  margin-top: 5rem;
+}
+#root .johlu-side .home-container p {
+  font-size: large;
+  padding: 1rem 2rem 0rem 2rem;
+  margin-bottom: 5rem;
+}/*# sourceMappingURL=style.css.map */
