@@ -18,45 +18,109 @@
 $mainFontColor: rgba(255, 255, 255, 0.87);
 
 #root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  height: 100vh; // Style for Home.jsx
 
-  @include displayLayout1();
-  justify-content: space-between;
-  position: relative;
+  .home-side {
+    @include displayLayout1();
+    justify-content: space-between;
 
-  .johlu-side {
-    @include displayLayout2();
+    .johlu-side {
+      position: relative;
+      @include displayLayout2();
+      margin-bottom: 5rem;
 
-    .profile-pic {
-      position: absolute;
-      top: 10rem;
-      left: 1rem;
-      width: 165px;
-      border-radius: 50%;
-      margin: 2rem;
-    }
-
-    .home-container {
-      width: 100%;
-      height: 50vh;
-      position: absolute;
-      top: 18rem;
-
-      text-align: center;
-
-      .welcome-message {
-        font-weight: 800;
-        font-size: xx-large;
-        margin-top: 5rem;
+      .profile-pic {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        width: 165px;
+        border-radius: 50%;
+        margin: 2rem;
+        z-index: 1;
       }
 
-      p {
-        font-size: large;
-        padding: 1rem 2rem 0rem 2rem;
-        margin-bottom: 5rem;
+      .home-container {
+        padding-top: 17rem;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        z-index: 2;
+
+        .welcome-message {
+          font-weight: 800;
+          font-size: xx-large;
+        }
+
+        p {
+          font-size: large;
+          padding: 1rem 2rem 0rem 2rem;
+        }
+      }
+
+      .purple {
+        background-color: rgb(161, 87, 252);
+        box-shadow: 0px 0px 10px 2px rgb(203, 163, 251);
+
+        border: none;
+        border-radius: 50%;
+
+        width: 400px;
+        height: 5px;
+        margin: 8rem 0rem 1rem 0rem;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .turquoise {
+        background-color: rgb(83, 237, 222);
+        box-shadow: 0px 0px 10px 2px rgb(131, 243, 231);
+
+        border: none;
+        border-radius: 50%;
+
+        width: 500px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 0;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .indigo {
+        background-color: rgb(89, 0, 255);
+        box-shadow: 0px 0px 10px 2px rgb(115, 42, 250);
+
+        border: none;
+        border-radius: 50%;
+
+        width: 350px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 0;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .copy {
+        font-size: 15px;
+        margin-top: 100rem;
       }
     }
   }
+}
+
+// Including media queries for responsinvity
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 748px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 340px) {
 }

@@ -3,28 +3,29 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
 @mixin link() {
   color: $mainFontColor;
   text-decoration: none;
-  margin: 1rem;
 }
 
 /* Dropdown-knappen */
 
 .dropdown-container {
   position: relative;
-  width: 40%;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
 
   .dropdown-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    width: 6rem;
     height: 7vh;
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    background-color: rgba(29, 29, 29, 0.856);
+    margin-top: 2rem;
+    background-color: rgb(29, 29, 29);
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.948);
@@ -47,16 +48,19 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
   }
   .drop-container {
     position: absolute;
+    top: -0.9rem;
 
     background-color: rgb(27, 27, 27);
 
     width: 100%;
     height: 100vh;
+    z-index: 3;
 
     .drop-list {
       font-size: x-large;
       list-style-type: none;
-      margin-block-start: 5rem;
+
+      margin: 8rem 2rem 0rem 2rem;
 
       text-align: center;
 
@@ -64,6 +68,9 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
       .drop-link2,
       .drop-link3 {
         @include link();
+      text-align: center;
+      cursor: pointer;
+        
       }
     }
   }

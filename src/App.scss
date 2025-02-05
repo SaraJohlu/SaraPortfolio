@@ -27,9 +27,10 @@ $mainfontcolor: rgba(255, 255, 255, 0.87);
 
   #root {
     @include displayLayout1();
+    justify-content: space-between;
     font-family: "Nunito", serif;
 
-    max-width: 100%;
+    width: 100%;
     height: 100vh;
 
     color-scheme: light dark;

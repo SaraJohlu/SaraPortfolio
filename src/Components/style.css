@@ -1,42 +1,80 @@
 #root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+#root .home-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
-#root .johlu-side {
+#root .home-side .johlu-side {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
-#root .johlu-side .profile-pic {
+#root .home-side .johlu-side .profile-pic {
   position: absolute;
-  top: 10rem;
+  top: 4rem;
   left: 1rem;
   width: 165px;
   border-radius: 50%;
   margin: 2rem;
+  z-index: 1;
 }
-#root .johlu-side .home-container {
+#root .home-side .johlu-side .home-container {
+  padding-top: 17rem;
   width: 100%;
   height: 50vh;
-  position: absolute;
-  top: 18rem;
   text-align: center;
+  z-index: 2;
 }
-#root .johlu-side .home-container .welcome-message {
+#root .home-side .johlu-side .home-container .welcome-message {
   font-weight: 800;
   font-size: xx-large;
-  margin-top: 5rem;
 }
-#root .johlu-side .home-container p {
+#root .home-side .johlu-side .home-container p {
   font-size: large;
   padding: 1rem 2rem 0rem 2rem;
-  margin-bottom: 5rem;
+}
+#root .home-side .johlu-side .purple {
+  background-color: rgb(161, 87, 252);
+  box-shadow: 0px 0px 10px 2px rgb(203, 163, 251);
+  border: none;
+  border-radius: 50%;
+  width: 400px;
+  height: 5px;
+  margin: 8rem 0rem 1rem 0rem;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+#root .home-side .johlu-side .turquoise {
+  background-color: rgb(83, 237, 222);
+  box-shadow: 0px 0px 10px 2px rgb(131, 243, 231);
+  border: none;
+  border-radius: 50%;
+  width: 500px;
+  height: 5px;
+  margin: 1rem 0rem 1rem 0;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+#root .home-side .johlu-side .indigo {
+  background-color: rgb(89, 0, 255);
+  box-shadow: 0px 0px 10px 2px rgb(115, 42, 250);
+  border: none;
+  border-radius: 50%;
+  width: 350px;
+  height: 5px;
+  margin: 1rem 0rem 1rem 0;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+#root .home-side .johlu-side .copy {
+  font-size: 15px;
+  margin-top: 100rem;
 }/*# sourceMappingURL=style.css.map */

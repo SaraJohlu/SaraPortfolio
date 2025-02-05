@@ -14,7 +14,7 @@ const Johlu = () => {
       <section className="home-container">
         <h1 className="welcome-message">Welcome {yourName}</h1>
         <p>
-          Nice to see you findinf your way to my portfolio site. My name is
+          Nice to see you finding your way to my portfolio site. My name is
           Sara, I&apos;m a frontend student from Sweden. Please navigate around
           to read more about me and get a glimpse of the applications and
           projects I have done.
