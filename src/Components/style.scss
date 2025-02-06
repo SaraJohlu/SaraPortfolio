@@ -19,7 +19,7 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
 
 #root {
   width: 100%;
-  height: 100vh; // Style for Home.jsx
+  max-height: 100vh; // Style for Home.jsx
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

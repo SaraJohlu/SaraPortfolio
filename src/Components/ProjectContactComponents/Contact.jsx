@@ -4,6 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import Mail from './Mail'
 
 import '../style.css'
+import '../../mediaQ.css'
 
 
 const Contact = () => {

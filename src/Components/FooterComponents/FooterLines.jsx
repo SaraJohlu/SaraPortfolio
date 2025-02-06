@@ -1,4 +1,5 @@
 import "./style/footercomponents.css"
+import '../../mediaQ.css'
 
 const FooterLines = () => {
 

@@ -27,11 +27,10 @@ $mainfontcolor: rgba(255, 255, 255, 0.87);
 
   #root {
     @include displayLayout1();
-    justify-content: space-between;
     font-family: "Nunito", serif;
 
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
 
     color-scheme: light dark;
     color: $mainfontcolor;
@@ -149,3 +148,336 @@ $mainfontcolor: rgba(255, 255, 255, 0.87);
   }
 }
 
+/*min 1331px - max 2200px*/
+@media (min-width: 1331px) and (max-width:2500px ) {
+  * {
+    #root {
+      
+      .hello-there {
+        font-size: 50px;
+        padding-top: 5rem;
+      }
+
+      .no-stranger {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .interaction-container {
+        margin-top: 3rem;
+        
+
+        .input-field {
+          width: 50%;
+          height: 2rem;
+          text-align: center;
+          font-size: medium;
+          z-index: 1;
+        }
+
+        .submit-button {
+          width: 10%;
+          height: 1.5rem;
+          z-index: 1;
+        }
+
+        .submit-button:hover {
+          border: 2px solid turquoise;
+          scale: 1.2;
+          
+        }
+      }
+
+      .purple {
+        width: 700px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 10rem;
+        z-index: 0;
+      }
+
+      .turquoise {
+        width: 900px;
+        height: 5px;
+        margin: -4rem 0rem 1rem 20rem;
+        z-index: 0;
+      }
+
+      .indigo {
+        width: 600px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 20rem;
+        z-index: 0;
+      }
+
+      .copy {
+        font-size: 10px;
+        margin-top: 18rem;
+      }
+    }
+  }
+}
+/*min 801px - 1330px*/
+@media (min-width: 801px) and (max-width:1330px ) {
+  * {
+    #root {
+      
+      .hello-there {
+        font-size: 50px;
+        padding-top: 5rem;
+      }
+
+      .no-stranger {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .interaction-container {
+        margin-top: 3rem;
+        
+
+        .input-field {
+          width: 70%;
+          height: 2rem;
+          text-align: center;
+          font-size: medium;
+          z-index: 1;
+        }
+
+        .submit-button {
+          width: 20%;
+          height: 1.5rem;
+          z-index: 1;
+        }
+
+        .submit-button:hover {
+          border: 2px solid turquoise;
+          scale: 1.2;
+          
+        }
+      }
+
+      .purple {
+        width: 700px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 10rem;
+        z-index: 0;
+      }
+
+      .turquoise {
+        width: 900px;
+        height: 5px;
+        margin: -4rem 0rem 1rem 20rem;
+        z-index: 0;
+      }
+
+      .indigo {
+        width: 600px;
+        height: 5px;
+        margin: 1rem 0rem 1rem 20rem;
+        z-index: 0;
+      }
+
+      .copy {
+        font-size: 10px;
+        margin-top: 18rem;
+      }
+    }
+  }
+}
+
+/*min 601px - 800px*/
+@media (min-width: 601px) and (max-width:979px ) {
+  * {
+    #root {
+      .hello-there {
+        font-size: 50px;
+        padding-top: 5rem;
+      }
+
+      .no-stranger {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .interaction-container {
+        margin-top: 3rem;
+
+        .input-field {
+          width: 70%;
+          height: 2rem;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .submit-button {
+          width: 20%;
+          height: 1.5rem;
+        }
+
+        .submit-button:hover {
+          border: 2px solid turquoise;
+          scale: 1.2;
+        }
+      }
+
+      .purple {
+        width: 300px;
+        height: 3px;
+        margin: 5rem 0rem 1rem 0rem;
+      }
+
+      .turquoise {
+        width: 400px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+      }
+
+      .indigo {
+        width: 350px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .copy {
+        font-size: 10px;
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+/*min 370px - max 600px*/
+@media (min-width: 370px) and (max-width: 600px){
+  * {
+    #root {
+      .hello-there {
+        font-size: 40px;
+        padding-top: 5rem;
+      }
+
+      .no-stranger {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .interaction-container {
+        margin-top: 3rem;
+
+        .input-field {
+          width: 70%;
+          height: 2rem;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .submit-button {
+          width: 20%;
+          height: 1.5rem;
+        }
+
+        .submit-button:hover {
+          border: 2px solid turquoise;
+          scale: 1.2;
+        }
+      }
+
+      .purple {
+        width: 300px;
+        height: 3px;
+        margin: 5rem 0rem 1rem 0rem;
+      }
+
+      .turquoise {
+        width: 400px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+      }
+
+      .indigo {
+        width: 350px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .copy {
+        font-size: 10px;
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+/*min 320px - max 360px*/
+@media (min-width: 320px) and (max-width:360px) {
+  * {
+    #root {
+      .hello-there {
+        font-size: 40px;
+        padding-top: 5rem;
+      }
+
+      .no-stranger {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .interaction-container {
+        margin-top: 3rem;
+
+        .input-field {
+          width: 70%;
+          height: 2rem;
+          text-align: center;
+          font-size: medium;
+        }
+
+        .submit-button {
+          width: 20%;
+          height: 1.5rem;
+        }
+
+        .submit-button:hover {
+          border: 2px solid turquoise;
+          scale: 1.2;
+        }
+      }
+
+      .purple {
+        width: 300px;
+        height: 3px;
+        margin: 5rem 0rem 1rem 0rem;
+      }
+
+      .turquoise {
+        width: 400px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+      }
+
+      .indigo {
+        width: 350px;
+        height: 3px;
+        margin: 1rem 0rem 1rem 0;
+
+        transform: rotate(-45deg);
+        z-index: 1;
+      }
+
+      .copy {
+        font-size: 10px;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Projects from './ProjectContactComponents/Projects'
 import Contact from './ProjectContactComponents/Contact'
 
 import "./style.css";
+import '../mediaQ.css'
 
 
 const ProjectsNContact = () => {

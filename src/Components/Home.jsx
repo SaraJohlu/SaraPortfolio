@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Johlu from "./Johlu";
 
 import "./style.css";
+import '../mediaQ.css'
 
 const Home = () => {
   return (

@@ -1,5 +1,6 @@
 import { BiMailSend } from "react-icons/bi";
 import '../style.css'
+import '../../mediaQ.css'
 
 const Mail = () => {
 

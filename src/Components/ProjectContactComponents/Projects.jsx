@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import '../style.css'
+import '../../mediaQ.css'
 
 // Fetch my gh repos for showing projects with API 
 const Projects = () => {

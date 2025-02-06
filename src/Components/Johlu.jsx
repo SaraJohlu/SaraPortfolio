@@ -3,6 +3,7 @@
 import { useSelector } from "react-redux";
 import "./style.css";
 import Profilepic from '../assets/profil1.png'
+import '../mediaQ.css'
 
 const Johlu = () => {
   const yourName = useSelector((state) => state.user.name);
