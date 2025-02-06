@@ -17,6 +17,9 @@
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(to bottom, rgb(38, 38, 38), black);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 * #root .hello-there {
   font-size: 65px;

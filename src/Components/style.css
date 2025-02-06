@@ -1,6 +1,9 @@
 #root {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #root .home-side {
   display: flex;
@@ -8,6 +11,8 @@
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-height: 100vh;
 }
 #root .home-side .johlu-side {
   position: relative;
@@ -102,4 +107,42 @@
 .about-container p {
   font-size: large;
   padding-top: 0.5rem;
+}
+
+.projects-contact-container {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 4rem 2rem 1rem;
+  overflow-y: auto;
+  background-color: rgba(34, 34, 34, 0.192);
+  z-index: 3;
+}
+.projects-contact-container .project-h2 {
+  font-size: xx-large;
+  background: -webkit-linear-gradient(rgb(145, 238, 241), rgb(2, 105, 125));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem 0rem 0rem 0rem;
+}
+.projects-contact-container p {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: large;
+}
+.projects-contact-container article {
+  margin: 0.5rem;
+}
+.projects-contact-container article a {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+}
+.projects-contact-container article a:hover {
+  text-decoration: underline;
+}
+.projects-contact-container article h3 {
+  margin: 1rem;
+  color: rgba(255, 255, 255, 0.87);
 }/*# sourceMappingURL=style.css.map */
