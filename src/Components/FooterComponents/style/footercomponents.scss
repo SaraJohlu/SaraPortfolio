@@ -1,11 +1,10 @@
 .line-container {
-    position: relative;
-    width: 100%;
-    max-height: 100vh;
-    margin-bottom: 15rem;
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  margin-bottom: 15rem;
 
-
-.turquoise-line {
+  .turquoise-line {
     position: absolute;
     top: 6rem;
     left: -3rem;
@@ -20,10 +19,9 @@
 
     transform: rotate(-45deg);
     z-index: 1;
+  }
 
-}
-
-.purple-line {
+  .purple-line {
     position: absolute;
     top: 5rem;
     left: -1rem;
@@ -39,9 +37,9 @@
 
     transform: rotate(-45deg);
     z-index: 1;
-}
+  }
 
-.indigo-line {
+  .indigo-line {
     position: absolute;
     position: absolute;
     top: 8rem;
@@ -58,11 +56,53 @@
 
     transform: rotate(-45deg);
     z-index: 1;
+  }
+  .copywright {
+    margin-bottom: 20rem;
+  }
 }
 
-}
+@media (min-width: 1024px) {
+  .line-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    margin-bottom: 15rem;
 
-@media (max-width: 1250px) {
+    .turquoise-line {
+      top: -6.5rem;
+      left: 38rem;
+
+      width: 800px;
+      height: 5px;
+
+      z-index: 0;
+    }
+
+    .purple-line {
+      top: -7rem;
+      left: 40rem;
+
+      width: 700px;
+      height: 5px;
+      z-index: 0;
+    }
+
+    .indigo-line {
+      top: -7rem;
+      left: 48rem;
+
+      width: 550px;
+      height: 5px;
+
+      transform: rotate(-45deg);
+      z-index: 0;
+    }
+
+    .copywright {
+      margin-bottom: 20rem;
+    }
+  }
 }
 
 @media (max-width: 748px) {

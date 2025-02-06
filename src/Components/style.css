@@ -1,6 +1,6 @@
 #root {
-  max-width: 100%;
-  max-height: 100vh;
+  width: 100%;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,6 +84,10 @@
   margin-top: 100rem;
 }
 
+.copywright {
+  margin-bottom: 20rem;
+}
+
 .about-container {
   width: 100%;
   height: 450px;
@@ -116,7 +120,7 @@
   margin-top: 2rem;
   padding: 4rem 2rem 1rem;
   overflow-y: auto;
-  background-color: rgba(34, 34, 34, 0.192);
+  background-color: rgba(34, 34, 34, 0);
   z-index: 3;
 }
 .projects-contact-container .project-h2 {
@@ -145,4 +149,104 @@
 .projects-contact-container article h3 {
   margin: 1rem;
   color: rgba(255, 255, 255, 0.87);
+}
+
+@media (min-width: 769px) {
+  #root .home-side {
+    z-index: 1;
+  }
+  #root .home-side .johlu-side .profile-pic {
+    width: 230px;
+    top: 2rem;
+    left: 20rem;
+  }
+  #root .home-side .johlu-side .home-container {
+    padding-top: 10rem;
+  }
+  #root .home-side .johlu-side .home-container .welcome-message {
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-left: 1rem;
+  }
+  #root .home-side .johlu-side .home-container p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #root .home-side .johlu-side .profile-pic {
+    width: 100px;
+    top: 2rem;
+  }
+  #root .home-side .johlu-side .home-container {
+    padding-top: 10rem;
+  }
+  #root .home-side .johlu-side .home-container .welcome-message {
+    font-size: 1.8rem;
+  }
+  #root .home-side .johlu-side .home-container p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  #root .home-side .johlu-side .profile-pic {
+    width: 120px;
+    top: 5rem;
+  }
+  #root .home-side .johlu-side .home-container {
+    padding-top: 10rem;
+  }
+  #root .home-side .johlu-side .home-container .welcome-message {
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+  #root .home-side .johlu-side .home-container p {
+    font-size: 1rem;
+  }
+  .about-container,
+  .projects-contact-container {
+    padding: 1.5rem 1rem;
+  }
+  .about-container h1,
+  .projects-contact-container h1 {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+  }
+  .about-container h2,
+  .projects-contact-container h2 {
+    font-size: 1.4rem;
+  }
+  .about-container p,
+  .projects-contact-container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  #root .home-side .johlu-side .profile-pic {
+    width: 80px;
+  }
+  #root .home-side .johlu-side .home-container {
+    padding-top: 6rem;
+  }
+  #root .home-side .johlu-side .home-container .welcome-message {
+    font-size: 1.3rem;
+  }
+  #root .home-side .johlu-side .home-container p {
+    font-size: 0.8rem;
+  }
+  .about-container,
+  .projects-contact-container {
+    padding: 1rem;
+  }
+  .about-container h1,
+  .projects-contact-container h1 {
+    font-size: 1.1rem;
+  }
+  .about-container h2,
+  .projects-contact-container h2 {
+    font-size: 1rem;
+  }
+  .about-container p,
+  .projects-contact-container p {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

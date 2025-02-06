@@ -43,4 +43,41 @@
   height: 5px;
   transform: rotate(-45deg);
   z-index: 1;
+}
+.line-container .copywright {
+  margin-bottom: 20rem;
+}
+
+@media (min-width: 1024px) {
+  .line-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    margin-bottom: 15rem;
+  }
+  .line-container .turquoise-line {
+    top: -6.5rem;
+    left: 38rem;
+    width: 800px;
+    height: 5px;
+    z-index: 0;
+  }
+  .line-container .purple-line {
+    top: -7rem;
+    left: 40rem;
+    width: 700px;
+    height: 5px;
+    z-index: 0;
+  }
+  .line-container .indigo-line {
+    top: -7rem;
+    left: 48rem;
+    width: 550px;
+    height: 5px;
+    transform: rotate(-45deg);
+    z-index: 0;
+  }
+  .line-container .copywright {
+    margin-bottom: 20rem;
+  }
 }/*# sourceMappingURL=footercomponents.css.map */

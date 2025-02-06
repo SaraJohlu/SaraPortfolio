@@ -1,67 +1,87 @@
- /* Neon Text */
- .neon-container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 50%;
-    height: 10vh;
-  
-  
+/* Neon Text */
+.neon-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: 10vh;
+
   .neon-text {
     font-family: "Neonderthaw", serif;
     font-style: normal;
     color: rgb(254, 254, 254);
     text-align: center;
     font-weight: bolder;
-    font-size: 5rem;    
+    font-size: 5rem;
     rotate: -10deg;
     letter-spacing: 0.2rem;
     padding: 10px;
     margin-left: 2rem;
     margin-top: 4rem;
-  
+
     text-shadow: 0 0 5px #731ced, 0 0 10px hsla(247, 100%, 76%, 0.959),
-      0 0 20px hsla(247, 100%, 76%, 0.959),
-      0 0 40px hsla(247, 100%, 76%, 0.959),
+      0 0 20px hsla(247, 100%, 76%, 0.959), 0 0 40px hsla(247, 100%, 76%, 0.959),
       0 0 80px hsla(247, 100%, 76%, 0.959),
       0 0 120px hsla(247, 100%, 76%, 0.959);
-  
+
     /* Neon flicker animation */
     animation: flicker 1.5s infinite alternate;
   }
 }
-  
-  /* Flyttad keyframes utanför huvudklassen */
-  @keyframes flicker {
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-      text-shadow: 0 0 5px #731ced, 0 0 10px hsla(247, 100%, 76%, 0.959),
-        0 0 20px hsla(247, 100%, 76%, 0.959),
-        0 0 40px hsla(247, 100%, 76%, 0.959),
-        0 0 80px hsla(247, 100%, 76%, 0.959),
-        0 0 120px hsla(247, 100%, 76%, 0.959);
-    }
-  
-    20%,
-    24%,
-    55% {
-      text-shadow: 0 0 2px hsl(240, 90%, 81%), 0 0 4px hsl(240, 90%, 81%),
-        0 0 8px hsl(240, 90%, 81%), 0 0 20px hsl(240, 90%, 81%),
-        0 0 40px hsl(240, 90%, 81%), 0 0 60px hsl(240, 90%, 81%);
-    }
+
+/*Keyframes to make an flicker animaton, different opacity and color pixel at different procentia*/ 
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #731ced, 0 0 10px hsla(247, 100%, 76%, 0.959),
+      0 0 20px hsla(247, 100%, 76%, 0.959), 0 0 40px hsla(247, 100%, 76%, 0.959),
+      0 0 80px hsla(247, 100%, 76%, 0.959),
+      0 0 120px hsla(247, 100%, 76%, 0.959);
   }
 
-/* Responsiv design för att få det att passa större skärmar */
-@media (max-width: 1282px) {
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 2px hsl(240, 90%, 81%), 0 0 4px hsl(240, 90%, 81%),
+      0 0 8px hsl(240, 90%, 81%), 0 0 20px hsl(240, 90%, 81%),
+      0 0 40px hsl(240, 90%, 81%), 0 0 60px hsl(240, 90%, 81%);
+  }
 }
 
-@media (max-width: 768px) {
+/* Responsive design for bigger screens*/
+@media (min-width: 769px) {
+  .neon-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 10vh;
+  
+    .neon-text {
+      font-family: "Neonderthaw", serif;
+      font-style: normal;
+      color: rgb(254, 254, 254);
+      text-align: center;
+      font-weight: bolder;
+      font-size: 6rem;
+      rotate: -10deg;
+      letter-spacing: 0.2rem;
+      padding: 10px;
+      margin-left: 2rem;
+      margin-top: 4rem;
+  
+    }
+  }
+ 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .neon-text {
     font-size: 2.5rem;
     margin-left: 1rem;
@@ -85,6 +105,7 @@
   }
 }
 
+/*Responsive design for smaller screen*/
 @media (max-width: 480px) {
   .neon-text {
     font-size: 2rem;
