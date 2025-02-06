@@ -1,6 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import Mail from './Mail'
 
 import '../style.css'
 
@@ -24,8 +25,9 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/sara-johnson-lund%C3%A9n-6a6948325///">
             <FaLinkedin />
           </a>
-
         </article>
+
+        <Mail />
       </section>
     </>
   );
