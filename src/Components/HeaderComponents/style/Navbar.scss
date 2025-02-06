@@ -9,8 +9,8 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
 
 .dropdown-container {
   position: relative;
-  width: 50%;
-  justify-content: flex-end;
+  width: 100%;
+  padding-left: 2rem;
   align-items: center;
 
   .dropdown-button {
@@ -48,10 +48,11 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
   .drop-container {
     position: absolute;
     top: -0.9rem;
+    right: 0.5rem;
 
     background-color: rgb(27, 27, 27);
 
-    width: 100%;
+    width: 200px;
     height: 100vh;
     z-index: 4;
 
@@ -74,131 +75,3 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
   }
 }
 
-@media (min-width: 1716px) {
-  .dropdown-container {
-    width: 100%;
-    align-items: center;
-    margin-left: 100rem;
-
-    .dropdown-button {
-      width: 90%;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.948);
-        border: 2px solid rgb(70, 0, 128);
-      }
-
-      .menu-icon {
-        font-size: 45px;
-        color: rgb(56, 20, 128);
-        transition: 0.3s;
-
-        &:hover {
-          text-shadow: 0 0 5px #731ced, 0 0 10px hsla(247, 100%, 76%, 0.959),
-            0 0 20px hsla(247, 100%, 76%, 0.959),
-            0 0 40px hsla(247, 100%, 76%, 0.959),
-            0 0 80px hsla(247, 100%, 76%, 0.959),
-            0 0 120px hsla(247, 100%, 76%, 0.959);
-        }
-      }
-    }
-    .drop-container {
-      display: flex;
-      flex-direction: row;
-      top: 1.2rem;
-      right: 14rem;
-
-      background-color: rgba(27, 27, 27, 0.766);
-
-      width: 650px;
-      height: 10vh;
-      z-index: 4;
-
-      border-radius: 5px;
-
-      .drop-list {
-        font-size: x-large;
-        list-style-type: none;
-
-        margin: 2rem 2rem 1rem 3rem;
-
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-
-        .drop-link1,
-        .drop-link2,
-        .drop-link3 {
-          @include link();
-          text-align: center;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-}
-
-@media (min-width: 769px) and (max-width: 1715px) {
-  .dropdown-container {
-    width: 100%;
-    align-items: center;
-    margin-left: 60rem;
-
-    .dropdown-button {
-      width: 50%;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.948);
-        border: 2px solid rgb(70, 0, 128);
-      }
-
-      .menu-icon {
-        font-size: 45px;
-        color: rgb(56, 20, 128);
-        transition: 0.3s;
-
-        &:hover {
-          text-shadow: 0 0 5px #731ced, 0 0 10px hsla(247, 100%, 76%, 0.959),
-            0 0 20px hsla(247, 100%, 76%, 0.959),
-            0 0 40px hsla(247, 100%, 76%, 0.959),
-            0 0 80px hsla(247, 100%, 76%, 0.959),
-            0 0 120px hsla(247, 100%, 76%, 0.959);
-        }
-      }
-    }
-    .drop-container {
-      display: flex;
-      flex-direction: row;
-      top: 1.2rem;
-      right: 20rem;
-
-      background-color: rgba(27, 27, 27, 0.766);
-
-      width: 650px;
-      height: 10vh;
-    
-
-      border-radius: 5px;
-
-      .drop-list {
-        font-size: x-large;
-        list-style-type: none;
-
-        margin: 1rem 2rem 1rem 3rem;
-
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-
-        .drop-link1,
-        .drop-link2,
-        .drop-link3 {
-          @include link();
-          text-align: center;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}

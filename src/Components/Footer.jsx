@@ -1,6 +1,7 @@
 import FooterLines from "./FooterComponents/FooterLines" 
 import "./../App.css"
 import './style.css'
+import './FooterComponents/style/footercomponents.css'
 
 
 const Footer = () => {
