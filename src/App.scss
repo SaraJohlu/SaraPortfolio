@@ -31,7 +31,7 @@ $mainfontcolor: rgba(255, 255, 255, 0.87);
     font-family: "Nunito", serif;
 
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
 
     color-scheme: light dark;
     color: $mainfontcolor;

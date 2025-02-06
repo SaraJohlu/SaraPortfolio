@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: linear-gradient(to bottom, rgb(38, 38, 38), black);
 }
 #root .home-side {
   display: flex;

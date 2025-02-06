@@ -23,6 +23,7 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: linear-gradient(to bottom, rgb(38, 38, 38), black);
 
   .home-side {
     @include displayLayout1();
