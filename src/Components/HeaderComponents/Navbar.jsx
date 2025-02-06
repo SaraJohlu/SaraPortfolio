@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom"
 
 import './style/Navbar.css'
-import '../../mediaQ.css'
+
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false); // Boolean på false för att kunna använda dropdown navigationen

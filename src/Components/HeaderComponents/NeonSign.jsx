@@ -1,5 +1,5 @@
 import './style/NeonSign.css'
-import '../../mediaQ.css'
+
 
 const NeonSign = () => {
     const text = "Johlu";

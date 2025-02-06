@@ -5,7 +5,7 @@
 }
 .line-container .turquoise-line {
   position: absolute;
-  top: 14rem;
+  top: 10rem;
   left: -3rem;
   background-color: rgb(83, 237, 222);
   box-shadow: 0px 0px 10px 2px rgb(131, 243, 231);
@@ -14,11 +14,11 @@
   width: 500px;
   height: 5px;
   transform: rotate(-45deg);
-  z-index: 1;
+  z-index: 0;
 }
 .line-container .purple-line {
   position: absolute;
-  top: 13rem;
+  top: 9rem;
   left: -1rem;
   background-color: rgb(161, 87, 252);
   box-shadow: 0px 0px 10px 2px rgb(203, 163, 251);
@@ -27,11 +27,11 @@
   width: 400px;
   height: 5px;
   transform: rotate(-45deg);
-  z-index: 1;
+  z-index: 0;
 }
 .line-container .indigo-line {
   position: absolute;
-  top: 16rem;
+  top: 12rem;
   left: 2rem;
   background-color: rgb(89, 0, 255);
   box-shadow: 0px 0px 10px 2px rgb(115, 42, 250);
@@ -40,5 +40,9 @@
   width: 350px;
   height: 5px;
   transform: rotate(-45deg);
-  z-index: 1;
+  z-index: 0;
+}
+
+.copywright {
+  margin-top: 18rem;
 }/*# sourceMappingURL=footercomponents.css.map */

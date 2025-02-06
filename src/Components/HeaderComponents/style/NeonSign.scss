@@ -53,3 +53,73 @@
       0 0 40px hsl(240, 90%, 81%), 0 0 60px hsl(240, 90%, 81%);
   }
 }
+
+
+@media (min-width: 1331px) and (max-width:2500px ) {
+  .neon-container {
+    height: 15vh;
+  
+    .neon-text {
+      font-size: 9rem;
+      padding: 40px;
+      margin-left: 3rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+/*min 801px - 1330px*/
+@media (min-width: 980px) and (max-width:1330px ) {
+  .neon-container {
+    height: 15vh;
+  
+    .neon-text {
+      font-size: 6rem;
+      padding: 40px;
+      margin-left: 3rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+/*min 601px - 800px*/
+@media (min-width: 601px) and (max-width:979px ) {
+  .neon-container {
+    height: 15vh;
+  
+    .neon-text {
+      font-size: 6rem;
+      padding: 40px;
+      margin-left: 3rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+/*min 370px - max 600px*/
+@media (min-width: 370px) and (max-width: 600px){
+  .neon-container {
+    height: 15vh;
+  
+    .neon-text {
+      font-size: 4rem;
+      padding: 10px;
+      margin-left: 1rem;
+      margin-top: 4rem;
+    }
+  }
+}
+
+/*min 320px - max 360px*/
+@media (min-width: 320px) and (max-width:360px) {
+  .neon-container {
+    height: 15vh;
+  
+    .neon-text {
+      font-size: 4rem;
+      padding: 15px;
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+  }
+}

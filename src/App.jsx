@@ -9,7 +9,7 @@ import About from "./Components/About";
 import ProjectsNContact from "./Components/ProjectsNContact";
 
 import "./App.css";
-import './mediaQ.css';
+
 
 function App() {
   // Making the App function for "start side"

@@ -1,10 +1,11 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Projects from './ProjectContactComponents/Projects'
-import Contact from './ProjectContactComponents/Contact'
+import Projects from "../Projects";
+import Contact from "../Contact";
+
 
 import "./style.css";
-import '../mediaQ.css'
+
 
 
 const ProjectsNContact = () => {

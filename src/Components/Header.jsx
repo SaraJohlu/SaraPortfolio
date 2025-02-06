@@ -3,7 +3,7 @@ import Navbar from './HeaderComponents/Navbar';
 
 import './HeaderComponents/style/headerstyle.css'
 import './style.css'
-import '../mediaQ.css'
+
 
 
 const Header = () => {

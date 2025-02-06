@@ -29,89 +29,45 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
     @include displayLayout1();
     justify-content: space-between;
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
 
     .johlu-side {
       position: relative;
-      @include displayLayout2();
+      @include displayLayout1();
       padding-top: 4rem;
 
-      .profile-pic {
-        position: absolute;
-        top: 4rem;
-        left: 1rem;
-        width: 165px;
-        border-radius: 50%;
-        margin: 2rem;
-        z-index: 1;
-      }
-
       .home-container {
-        padding-top: 12rem;
         width: 100%;
-        height: 35vh;
+        height: 11vh;
         text-align: center;
         z-index: 2;
 
         .welcome-message {
           font-weight: 800;
-          font-size: xx-large;
+          font-size: x-large;
         }
 
         p {
           font-size: large;
-          padding: 1rem 2rem 0rem 2rem;
+          padding: 0rem 2rem 0rem 2rem;
         }
       }
 
-      .purple {
-        background-color: rgb(161, 87, 252);
-        box-shadow: 0px 0px 10px 2px rgb(203, 163, 251);
-
-        border: none;
-        border-radius: 50%;
-
-        width: 400px;
-        height: 5px;
-        margin: 8rem 0rem 1rem 0rem;
-
-        transform: rotate(-45deg);
+      .profilecard {
+        width: 70%;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        border: 2px solid rgba(221, 119, 252, 0.781);
+        box-shadow: inset 1px 1px 10px 2px rgb(207, 104, 255, 0.781);
+        border-radius: 5px;
         z-index: 1;
-      }
 
-      .turquoise {
-        background-color: rgb(83, 237, 222);
-        box-shadow: 0px 0px 10px 2px rgb(131, 243, 231);
-
-        border: none;
-        border-radius: 50%;
-
-        width: 500px;
-        height: 5px;
-        margin: 1rem 0rem 1rem 0;
-
-        transform: rotate(-45deg);
-        z-index: 1;
-      }
-
-      .indigo {
-        background-color: rgb(89, 0, 255);
-        box-shadow: 0px 0px 10px 2px rgb(115, 42, 250);
-
-        border: none;
-        border-radius: 50%;
-
-        width: 350px;
-        height: 5px;
-        margin: 1rem 0rem 1rem 0;
-
-        transform: rotate(-45deg);
-        z-index: 1;
-      }
-
-      .copy {
-        font-size: 15px;
-        margin-top: 10rem;
+        .profile-pic {
+          width: 150px;
+          border-radius: 50%;
+          z-index: 1;
+        }
       }
     }
   }
@@ -120,13 +76,13 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
 // Style for about component
 .about-container {
   width: 100%;
-  height: 300px;
+  height: 200vh;
   text-align: center;
   margin-top: 5rem;
   padding: 4rem 2rem 1rem;
 
   overflow-y: auto;
-  background-color: rgba(34, 34, 34, 0.192);
+  background-color: rgba(34, 34, 34, 0);
   z-index: 3;
 
   h1 {
@@ -242,13 +198,266 @@ $mainFontColor: rgba(255, 255, 255, 0.87);
         background-color: rgb(31, 31, 31);
         border-radius: 5px;
         border: none;
-        color: rgb(3, 211, 187, 0.814) ;
+        color: rgb(3, 211, 187, 0.814);
         cursor: pointer;
 
         &:hover {
-          border: 2px solid rgba(163, 255, 243, 0.814) ;
+          border: 2px solid rgba(163, 255, 243, 0.814);
         }
       }
     }
   }
+}
+
+/*min 1331px - max 2200px*/
+@media (min-width: 1331px) and (max-width: 2500px) {
+  #root {
+    width: 100%;
+    max-height: 100vh; // Style for Home.jsx
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, rgb(38, 38, 38), black);
+
+    .home-side {
+      @include displayLayout1();
+      justify-content: space-between;
+      width: 100%;
+      max-height: 100vh;
+
+      .johlu-side {
+        position: relative;
+        @include displayLayout2();
+        padding-top: 4rem;
+
+        .profile-pic {
+          position: absolute;
+          top: 4rem;
+          left: 1rem;
+          width: 165px;
+          border-radius: 50%;
+          margin: 2rem;
+          z-index: 1;
+        }
+
+        .home-container {
+          padding-top: 12rem;
+          width: 100%;
+          height: 35vh;
+          text-align: center;
+          z-index: 2;
+
+          .welcome-message {
+            font-weight: 800;
+            font-size: xx-large;
+          }
+
+          p {
+            font-size: large;
+            padding: 1rem 2rem 0rem 2rem;
+          }
+        }
+
+        .purple {
+          background-color: rgb(161, 87, 252);
+          box-shadow: 0px 0px 10px 2px rgb(203, 163, 251);
+
+          border: none;
+          border-radius: 50%;
+
+          width: 400px;
+          height: 5px;
+          margin: 8rem 0rem 1rem 0rem;
+
+          transform: rotate(-45deg);
+          z-index: 1;
+        }
+
+        .turquoise {
+          background-color: rgb(83, 237, 222);
+          box-shadow: 0px 0px 10px 2px rgb(131, 243, 231);
+
+          border: none;
+          border-radius: 50%;
+
+          width: 500px;
+          height: 5px;
+          margin: 1rem 0rem 1rem 0;
+
+          transform: rotate(-45deg);
+          z-index: 1;
+        }
+
+        .indigo {
+          background-color: rgb(89, 0, 255);
+          box-shadow: 0px 0px 10px 2px rgb(115, 42, 250);
+
+          border: none;
+          border-radius: 50%;
+
+          width: 350px;
+          height: 5px;
+          margin: 1rem 0rem 1rem 0;
+
+          transform: rotate(-45deg);
+          z-index: 1;
+        }
+
+        .copy {
+          font-size: 15px;
+          margin-top: 10rem;
+        }
+      }
+    }
+  }
+
+  // Style for about component
+  .about-container {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 4rem 2rem 1rem;
+
+    overflow-y: auto;
+    background-color: rgba(34, 34, 34, 0.192);
+    z-index: 3;
+
+    h1 {
+      font-size: x-large;
+      font-weight: 600;
+      color: $mainFontColor;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: larger;
+      padding-top: 1rem;
+    }
+
+    p {
+      font-size: large;
+      padding-top: 0.5rem;
+    }
+  }
+
+  // style Projects and Contacts component
+  .projects-contact-container {
+    // using same rules as about style
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 6rem 2rem 1rem;
+
+    overflow-y: auto;
+    background-color: rgba(34, 34, 34, 0);
+    z-index: 3;
+
+    .project-h2 {
+      font-size: xx-large;
+      background: -webkit-linear-gradient(rgb(145, 238, 241), rgb(2, 105, 125));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 1rem 0rem 0rem 0rem;
+    }
+
+    p {
+      color: $mainFontColor;
+      font-size: large;
+    }
+
+    article {
+      margin: 0.5rem;
+
+      a {
+        color: $mainFontColor;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: larger;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      h3 {
+        margin: 1rem;
+        color: $mainFontColor;
+      }
+    }
+
+    .contact-container {
+      padding: 2rem 1rem 2rem 1rem;
+      margin-top: 2rem;
+      background: linear-gradient(
+        to bottom,
+        hsla(173, 57%, 68%, 0.814),
+        rgb(3, 211, 187, 0.814)
+      );
+      border-radius: 5px;
+
+      .contact-container h2 {
+        font-size: x-large;
+      }
+
+      .contact-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        width: 100%;
+
+        a {
+          width: 100%;
+          font-size: 50px;
+          color: rgb(31, 31, 31);
+          padding: 1rem;
+        }
+      }
+
+      .mail-container {
+        display: flex;
+        flex-direction: column;
+        color: $mainFontColor;
+
+        h2 {
+          font-size: medium;
+        }
+
+        button {
+          width: 80px;
+          margin: 0.5rem;
+
+          font-size: x-large;
+          text-align: center;
+          background-color: rgb(31, 31, 31);
+          border-radius: 5px;
+          border: none;
+          color: rgb(3, 211, 187, 0.814);
+          cursor: pointer;
+
+          &:hover {
+            border: 2px solid rgba(163, 255, 243, 0.814);
+          }
+        }
+      }
+    }
+  }
+}
+/*min 801px - 1330px*/
+@media (min-width: 801px) and (max-width: 1330px) {
+}
+
+/*min 601px - 800px*/
+@media (min-width: 601px) and (max-width: 979px) {
+}
+/*min 370px - max 600px*/
+@media (min-width: 370px) and (max-width: 600px) {
+}
+
+/*min 320px - max 360px*/
+@media (min-width: 320px) and (max-width: 360px) {
 }
